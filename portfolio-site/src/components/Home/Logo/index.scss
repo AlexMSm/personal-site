@@ -1,0 +1,28 @@
+.logo-container {
+  z-index: 0;
+  width: 400px;
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  bottom: 0;
+  left: auto;
+  animation-delay: 3s;
+  animation: fadeIn 2s linear both;
+  animation-fill-mode: forwards;
+
+  svg {
+    width: 100%;
+    height: auto;
+    bottom: auto;
+  }
+
+  .solid-logo {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+    width: 80%;
+  }
+}

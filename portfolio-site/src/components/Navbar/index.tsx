@@ -3,7 +3,12 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import LogoS from '../../assets/images/A-logo-white.png'
 import LogoSubtitle from '../../assets/images/name-logo-white.png'
-import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import {
+  faHome,
+  faUser,
+  faEnvelope,
+  faSuitcase,
+} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Navbar = () => {
@@ -43,6 +48,13 @@ const Navbar = () => {
           style={({ isActive }) => (isActive ? activeStyle : undefined)}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#fdf0d5" />
+        </NavLink>
+        <NavLink
+          className="portfolio-link"
+          to="/portfolio"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          <FontAwesomeIcon icon={faSuitcase} color="#fdf0d5" />
         </NavLink>
       </nav>
     </div>

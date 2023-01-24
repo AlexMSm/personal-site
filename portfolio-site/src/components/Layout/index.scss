@@ -17,9 +17,16 @@
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+  display: flex;
+  flex-direction: row-reverse;
+  border: #ffd700 solid 1px;
 }
 
-.details-page {
+.details-page,
+.contact-page,
+.portfolio-page {
+  border: #8d8a74 solid 1px;
+  margin: 0px;
   .text-zone {
     position: absolute;
     left: 10%;
@@ -57,5 +64,10 @@
         animation-delay: 1.3s;
       }
     }
+  }
+}
+.portfolio-page {
+  .text-zone {
+    top: 20%;
   }
 }

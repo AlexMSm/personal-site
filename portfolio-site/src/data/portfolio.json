@@ -1,0 +1,20 @@
+{
+  "portfolio": [
+    {
+      "cover": "/portfolio/1/ncnews.png",
+      "hover": "/portfolio/1/ncnewshover.png",
+      "title": "NC News",
+      "description": "My first solo project completed on my Northcoders bootcamp",
+      "stack": ["Javascript", "Express", "postgreSQL", "React"],
+      "url": "https://als-news-app.netlify.app/"
+    },
+    {
+      "cover": "/portfolio/2/questr.png",
+      "hover": "/portfolio/2/questrhover.png",
+      "title": "NC News",
+      "description": "My first solo project completed on my Northcoders bootcamp",
+      "stack": ["Javascript", "Express", "postgreSQL", "React"],
+      "url": "https://northcoders.com/projects/nov-2022/questr"
+    }
+  ]
+}

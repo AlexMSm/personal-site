@@ -8,25 +8,8 @@ import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState<string>('text-animate')
-  const nameArray: string[] = ['l', 'e', 'x', ' ', 'S', 'm', 'i', 't', 'h']
-  const roleArray: string[] = [
-    'J',
-    'u',
-    'n',
-    'i',
-    'o',
-    'r',
-    ' ',
-    'D',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-  ]
+  const nameArray: string[] = 'lex Smith'.split('')
+  const roleArray: string[] = 'Junior Developer'.split('')
 
   useEffect(() => {
     setTimeout(() => {

@@ -3,7 +3,6 @@ import {
   faGithub,
   faHtml5,
   faJsSquare,
-  faPython,
   faReact,
 } from '@fortawesome/free-brands-svg-icons'
 import tsLogo from '../../assets/images/typescript_logo.png'
@@ -45,27 +44,28 @@ const Details = () => {
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">
-            <div className="face3">
+            <div className="face1">
               <img src={tsLogo} color="#DD0031" />
             </div>
             <div className="face2">
               <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
             </div>
-            <div className="face1">
+            <div className="face3">
               <img src={pythonLogo} color="#DD0031" className="python-logo" />
             </div>
-            <div className="face5">
+            <div className="face4">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
             </div>
-            <div className="face4">
+            <div className="face5">
               <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
             </div>
             <div className="face6">
-              <FontAwesomeIcon icon={faGithub} color="#EC4D28" />
+              <FontAwesomeIcon icon={faGithub} color="black" />
             </div>
           </div>
         </div>
       </div>
+      <Loader type="pacman" active={true} />
     </>
   )
 }

@@ -57,7 +57,7 @@
       }
 
       &:after {
-        content: '';
+        content: "";
         font-size: 9px;
         letter-spacing: 2px;
         position: absolute;
@@ -72,23 +72,23 @@
 
       &:first-child {
         &::after {
-          content: 'HOME';
+          content: "HOME";
         }
       }
     }
     .details-link {
       &:after {
-        content: 'DETAILS';
+        content: "DETAILS";
       }
     }
     .contact-link {
       &:after {
-        content: 'CONTACT';
+        content: "CONTACT";
       }
     }
     .portfolio-link {
       &:after {
-        content: 'PORTFOLIO';
+        content: "PORTFOLIO";
         font-size: 7px;
       }
     }
@@ -97,6 +97,71 @@
       svg {
         color: tomato;
       }
+    }
+  }
+}
+
+.hamburger-icon,
+.close-icon {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    ul,
+    nav {
+      display: none;
+    }
+
+    nav {
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #181818;
+      height: 100%;
+      margin: 0;
+      z-index: 2;
+      position: fixed;
+
+      &.mobile-show {
+        display: block;
+      }
+      .home-link,
+      .contact-link,
+      .details-link,
+      .portfolio-link {
+        height: 65px;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10px;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+    }
+    .hamburger-icon,
+    .close-icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: flex;
+      z-index: 4;
     }
   }
 }

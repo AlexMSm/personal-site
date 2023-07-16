@@ -1,0 +1,36 @@
+.project-card {
+  border: 0.5px solid #ffd700;
+  justify-items: center;
+  margin: 20px;
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+
+  .p-card-title {
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 35%;
+    color: #003049;
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  .project-links {
+    margin-left: 23%;
+    width: fit-content;
+    height: fit-content;
+  }
+  svg {
+    height: 40px;
+    margin-left: 20px;
+    color: #003049;
+  }
+}
+
+.p-card-body {
+  background: #ffd9007c;
+}

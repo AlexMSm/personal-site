@@ -1,21 +1,22 @@
-import React, { useEffect, useState } from 'react'
-import ALogo from '../../assets/images/A-logo-white.png'
-import { Link } from 'react-router-dom'
-import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
-import Loader from 'react-loaders'
+import React, { useEffect, useState } from "react";
+import ALogo from "../../assets/images/A-logo-white.png";
+import { Link } from "react-router-dom";
+import "./index.scss";
+import AnimatedLetters from "../AnimatedLetters";
+import Logo from "./Logo";
+import Loader from "react-loaders";
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState<string>('text-animate')
-  const nameArray: string[] = 'lex Smith'.split('')
-  const roleArray: string[] = 'Junior Developer'.split('')
+  const [letterClass, setLetterClass] = useState<string>("text-animate");
+  const nameArray: string[] = "lex Smith".split("");
+  const roleArray: string[] = "Software ".split("");
+  const roleArray2: string[] = "Engineer".split("");
 
   useEffect(() => {
     setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
-  }, [])
+      setLetterClass("text-animate-hover");
+    }, 4000);
+  }, []);
 
   return (
     <>
@@ -39,6 +40,11 @@ const Home = () => {
               strArray={roleArray}
               idx={20}
             />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={roleArray2}
+              idx={20}
+            />
           </h1>
           <h2>Javascript | React | SQL | Python</h2>
 
@@ -51,7 +57,7 @@ const Home = () => {
 
       <Loader type="pacman" active={true} />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,35 +1,32 @@
-import React, { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
-import AnimatedLetters from '../AnimatedLetters'
-import '../Layout/index.scss'
-import './index.scss'
-import portfolioData from '../../data/portfolio.json'
-import ProjectCard from './ProjectCard'
-
-console.log(portfolioData)
+import React, { useEffect, useState } from "react";
+import Loader from "react-loaders";
+import AnimatedLetters from "../AnimatedLetters";
+import "../Layout/index.scss";
+import "./index.scss";
+import portfolioData from "../../data/portfolio.json";
+import ProjectCard from "./ProjectCard";
 
 interface Project {
-  cover: string
-  hover: string
-  title: string
-  description: string
-  stack: string[]
-  url: string
+  cover: string;
+  hover: string;
+  title: string;
+  description: string;
+  stack: string[];
+  url: string;
+  github: string;
 }
 
 const Portfolio = () => {
-  const [letterClass, setLetterClass] = useState<string>('text-animate')
-
-  console.log(typeof portfolioData, typeof portfolioData.portfolio)
+  const [letterClass, setLetterClass] = useState<string>("text-animate");
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
+      setLetterClass("text-animate-hover");
+    }, 4000);
     return () => {
-      clearTimeout(timer)
-    }
-  }, [])
+      clearTimeout(timer);
+    };
+  }, []);
 
   return (
     <div>
@@ -38,13 +35,13 @@ const Portfolio = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={'Portfolio'.split('')}
+              strArray={"Portfolio".split("")}
               idx={15}
             />
           </h1>
         </div>
         <div className="projects-container">
-          {portfolioData.portfolio.map((project, idx) => {
+          {portfolioData.portfolio.map((project: Project, idx) => {
             return (
               <ProjectCard
                 title={project.title}
@@ -53,14 +50,15 @@ const Portfolio = () => {
                 hover={project.hover}
                 stack={project.stack}
                 url={project.url}
+                github={project.github}
               />
-            )
+            );
           })}
         </div>
       </div>
       <Loader type="pacman" active={true} />
     </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

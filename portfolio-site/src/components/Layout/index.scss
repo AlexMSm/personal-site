@@ -80,10 +80,14 @@
     position: initial;
     height: auto;
     min-height: auto;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
 
     &.contact-page,
-    &.about-page,
-    &.portfolio-page {
+    &.details-page,
+    &.portfolio-page,
+    &.home-page {
       .text-zone {
         position: initial;
         transform: none;
@@ -92,6 +96,10 @@
         padding: 20px;
         box-sizing: border-box;
       }
+    }
+    &.details-page {
+      display: flex;
+      flex-direction: column;
     }
 
     &.portfolio-page {
@@ -109,12 +117,5 @@
         max-width: calc(50% - 10px);
       }
     }
-  }
-
-  .stage-cube-cont {
-    position: initial;
-    width: 100%;
-    height: 0%;
-    overflow: visible;
   }
 }

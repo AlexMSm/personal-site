@@ -4,17 +4,28 @@
       "cover": "/portfolio/1/ncnews.png",
       "hover": "/portfolio/1/ncnewshover.png",
       "title": "NC News",
-      "description": "My first solo project completed on my Northcoders bootcamp",
+      "description": "My first solo project completed on the Northcoders bootcamp. The stack used includes JS, Express, pSQL and React.",
       "stack": ["Javascript", "Express", "postgreSQL", "React"],
-      "url": "https://als-news-app.netlify.app/"
+      "url": "https://als-news-app.netlify.app/",
+      "github": "https://github.com/AlexMSm/nc-news"
     },
     {
       "cover": "/portfolio/2/questr.png",
       "hover": "/portfolio/2/questrhover.png",
-      "title": "NC News",
-      "description": "My first solo project completed on my Northcoders bootcamp",
+      "title": "Questr",
+      "description": "My final group project completed on the Northcoders bootcamp. The stack used includes Typescript, React Native Expo, AWS S3 and Dynamo DB and Express.",
+      "stack": ["JavaScript", "Express", "postgreSQL", "React"],
+      "url": "https://northcoders.com/projects/nov-2022/questr",
+      "github": "https://github.com/MrsCf28/Questr"
+    },
+    {
+      "cover": "/portfolio/3/comingsoon.png",
+      "hover": "/portfolio/3/comingsoon.png",
+      "title": "On This Day",
+      "description": "A personal project using JavaScript, Firebase and Cloud Functions to get historic news from the current date.",
       "stack": ["Javascript", "Express", "postgreSQL", "React"],
-      "url": "https://northcoders.com/projects/nov-2022/questr"
+      "url": "",
+      "github": "https://github.com/AlexMSm/on-this-day"
     }
   ]
 }

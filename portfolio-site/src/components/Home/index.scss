@@ -12,7 +12,7 @@
     color: #fff;
     font-size: 5vh;
     margin: 0;
-    font-family: 'Coollvetica';
+    font-family: "Coollvetica";
     font-weight: 400;
 
     img {
@@ -53,6 +53,47 @@
       background: #ffd700;
       color: #333;
       font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home-page h1::before,
+  .home-page h1::after {
+    display: none;
+  }
+
+  .home-page {
+    margin: 0 auto;
+    width: 85%;
+
+    .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+      h1 {
+        color: #fff;
+        font-size: 4vh;
+      }
+    }
+    .flat-button {
+      float: none;
+      display: block;
+      margin: 20px auto 0 auto;
+      width: 80px;
+    }
+    .logo-container {
+      position: relative;
+      width: 100px;
+      height: auto;
+      top: 50px;
+      right: 0;
+      box-sizing: border-box;
+      margin: auto;
+      left: 0;
+      display: none;
     }
   }
 }
